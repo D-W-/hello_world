@@ -1,12 +1,6 @@
 git is a version control system
 git is free software
 
-为什么Git添加文件需要add，commit一共两步呢？因为commit可以一次提交很多文件，所以你可以多次add不同的文件，比如：
-
-$ git add file1.txt
-$ git add file2.txt
-$ git add file3.txt
-$ git commit -m "add 3 files."
 
 
 blabla
