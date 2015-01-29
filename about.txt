@@ -4,3 +4,5 @@ git traces changes of files.
 
 
 blabla
+
+Creating a new branch is quick AND simple.
