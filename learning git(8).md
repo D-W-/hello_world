@@ -19,14 +19,22 @@
 标签是版本库的一个快照  
 实际上是指向某个commit的指针,const 指针,因为标签不可以改变
 
- - 命令`git tag <name>`用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+ - 命令`git tag <name> <commit id>`用于新建一个标签，默认为HEAD，也可以指定一个commit id；
 
  - `git tag -a <tagname> -m "blablabla..."`可以指定标签信息；
 
  - `git tag -s <tagname> -m "blablabla..."`可以用PGP签名标签；
 
  - 命令`git tag`可以查看所有标签。 
- - 用命令`git show <tagname>`可以看到说明文字
+ 
+ - 用命令`git show <tagname>`可以看到说明文字  
+ 
+ - 命令`git push origin <tagname>`可以推送一个本地标签；
 
+ - 命令`git push origin --tags`可以推送全部未推送过的本地标签；
+
+ - 命令`git tag -d <tagname>`可以删除一个本地标签；
+
+ - 命令`git push origin :refs/tags/<tagname>`可以删除一个远程标签。
 
 > Written with [StackEdit](https://stackedit.io/).
